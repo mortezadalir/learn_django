@@ -5,3 +5,7 @@ from django.http import HttpResponse
 def index(request):
     #return HttpResponse("<em>Hello World</em>")
     return render(request,'first_app/index.html')
+    
+    
+def myapp(request):
+    return HttpResponse("<h1>this is myapp page</h1> ")
