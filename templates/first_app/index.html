@@ -17,8 +17,11 @@
 			{{form.as_p}}
 			<input type="submit" value="Submit">
 		</form>
+		{{ insert|lower }}
 	</div>
-
+	{% for x in name %}
+	<h1>{{x}}</h1>
+	{% endfor %}
 	</body>
 
 </html>
