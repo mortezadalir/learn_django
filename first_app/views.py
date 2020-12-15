@@ -20,5 +20,6 @@ def index(request):
     return render(request,'first_app/index.html',my_dict)
     
     
-def myapp(request):
-    return HttpResponse("<h1>this is myapp page</h1> ")
+def users(request):
+    person_list=Person.objects.all()
+    return render(request,"first_app/users.html",{'person_list':person_list})
